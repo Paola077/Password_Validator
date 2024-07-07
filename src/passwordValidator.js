@@ -1,4 +1,4 @@
-export function passwordValidator(password) {
+export function isPasswordValid(password) {
     if (typeof password !== 'string' || password.length < 8) return false;
     if (!/[A-Z]/.test(password)) return false;
     if (!/[a-z]/.test(password)) return false;
@@ -8,4 +8,4 @@ export function passwordValidator(password) {
     return true;
   }
 
-  export default passwordValidator;
+  export default isPasswordValid;
